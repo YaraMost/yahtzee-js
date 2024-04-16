@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yahtzee game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0">
+        <div class="dice-roll-area">
+          <p class="round-roll-label">
+            Round: <span class="rounds-left"></span>
+          </p>
+          <p class="round-roll-label">Roll: <span class="rolls-left"></span></p>
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+        </div>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+      </section>
+      <section class="score-board">
+        <table>
+          <thead>
+            <tr>
+              <th class="table-heading">Upper section</th>
+              <th>score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ones</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="1"
+                id="ones-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Twos</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="2"
+                id="twos-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Threes</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="3"
+                id="threes-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Fours</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="4"
+                id="fours-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Fives</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="5"
+                id="fives-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Sixes</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="6"
+                id="sixes-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Upper Total</td>
+              <td class="score-cell--upper" id="upper-score"></td>
+            </tr>
+            <tr>
+              <th>Bonus</th>
+              <td class="score-cell--bonus" id="bonus-score"></td>
+            </tr>
+            <tr>
+              <th class="table-heading">Lower section</th>
+              <th>Score</th>
+            </tr>
+            <tr>
+              <td>3 of a kind</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="7"
+                id="three-kind-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>4 of a kind</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="8"
+                id="four-kind-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Full house</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="9"
+                id="fullhouse-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Small straight</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="10"
+                id="sm-straight-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Large straight</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="11"
+                id="lg-straight-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Yahtzee</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="12"
+                id="yahtzee-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Chance</td>
+              <td
+                class="score-cell score-cell--entry"
+                data-cell="13"
+                id="chance-score"
+              ></td>
+            </tr>
+            <tr>
+              <td>Total score</td>
+              <td class="score-cell--total" id="total-score"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
